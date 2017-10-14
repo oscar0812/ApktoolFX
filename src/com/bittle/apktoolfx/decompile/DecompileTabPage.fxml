@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" onDragDropped="#apk_dropped" onDragOver="#apk_drag_over" fx:controller="com.bittle.apktoolfx.decompile.DecompileController">
+    <children>
+        <TextField fx:id="apk_text_field" layoutX="99.0" layoutY="14.0" prefHeight="27.0" prefWidth="352.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="10.0">
+            <tooltip>
+                <Tooltip text="Drop APK Here" />
+            </tooltip>
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                    </items>
+                </ContextMenu>
+            </contextMenu></TextField>
+        <Button fx:id="decompile_apk_button" layoutX="503.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#decompile_click" text="Decompile" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+        <Text layoutX="14.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log:" wrappingWidth="102.21875" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="10.0" />
+        <Separator layoutX="6.0" layoutY="182.0" prefHeight="0.0" prefWidth="590.0" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+        <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apk path:" wrappingWidth="85.21875" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <ScrollPane fx:id="log_scroll_pane" layoutX="14.0" layoutY="213.0" prefHeight="140.0" prefWidth="578.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <content>
+                <TextFlow fx:id="log_text_area" prefHeight="141.0" prefWidth="577.0" />
+            </content>
+        </ScrollPane>
+        <CheckBox layoutX="10.0" layoutY="37.0" mnemonicParsing="false" text="Force" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0">
+            <tooltip>
+                <Tooltip text="If output folder is already created, override it" />
+            </tooltip>
+        </CheckBox>
+        <CheckBox layoutX="10.0" layoutY="55.0" mnemonicParsing="false" text="No-res" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="75.0">
+            <tooltip>
+                <Tooltip text="Do not decode resources" />
+            </tooltip></CheckBox>
+        <CheckBox layoutX="12.0" layoutY="73.0" mnemonicParsing="false" text="No-src" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0">
+            <tooltip>
+                <Tooltip text="Do not decode sources" />
+            </tooltip></CheckBox>
+        <Text fx:id="output_dir_text" layoutX="129.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.topAnchor="85.0" />
+        <ButtonBar layoutX="95.0" layoutY="39.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.topAnchor="55.0">
+            <buttons>
+                <Button mnemonicParsing="false" onMouseClicked="#change_output_dir_click" text="Change output directory" />
+            </buttons>
+            <padding>
+                <Insets top="-10.0" />
+            </padding>
+        </ButtonBar>
+    </children>
+</AnchorPane>

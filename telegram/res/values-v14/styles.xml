@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HockeyApp.ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/hockeyapp_text_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/hockeyapp_btn_background</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="HockeyApp.EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textColor">@color/hockeyapp_text_normal</item>
+        <item name="android:textColorHint">@color/hockeyapp_text_light</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+    <style name="HockeyApp.SingleLineInputStyle" parent="@style/HockeyApp.EditTextStyle">
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

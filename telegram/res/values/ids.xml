@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="menu_bold" />
+    <item type="id" name="menu_groupbolditalic" />
+    <item type="id" name="menu_italic" />
+    <item type="id" name="menu_regular" />
+    <item type="id" name="label_message">false</item>
+    <item type="id" name="wrapper_feedback_scroll">false</item>
+    <item type="id" name="wrapper_feedback">false</item>
+    <item type="id" name="input_name">false</item>
+    <item type="id" name="input_email">false</item>
+    <item type="id" name="input_subject">false</item>
+    <item type="id" name="input_message">false</item>
+    <item type="id" name="wrapper_attachments">false</item>
+    <item type="id" name="button_attachment">false</item>
+    <item type="id" name="button_send">false</item>
+    <item type="id" name="wrapper_messages">false</item>
+    <item type="id" name="label_last_updated">false</item>
+    <item type="id" name="wrapper_messages_buttons">false</item>
+    <item type="id" name="button_add_response">false</item>
+    <item type="id" name="button_refresh">false</item>
+    <item type="id" name="list_feedback_messages">false</item>
+    <item type="id" name="text_headline">false</item>
+    <item type="id" name="input_password">false</item>
+    <item type="id" name="button_login">false</item>
+    <item type="id" name="view_header">false</item>
+    <item type="id" name="label_title">false</item>
+    <item type="id" name="label_version">false</item>
+    <item type="id" name="button_update">false</item>
+    <item type="id" name="web_update_details">false</item>
+    <item type="id" name="label_author">false</item>
+    <item type="id" name="label_date">false</item>
+    <item type="id" name="label_text">false</item>
+    <item type="id" name="list_attachments">false</item>
+    <item type="id" name="player_album_art">false</item>
+    <item type="id" name="player_song_name">false</item>
+    <item type="id" name="player_close">false</item>
+    <item type="id" name="player_author_name">false</item>
+    <item type="id" name="player_album_title">false</item>
+    <item type="id" name="player_progress_bar">false</item>
+    <item type="id" name="player_previous">false</item>
+    <item type="id" name="player_pause">false</item>
+    <item type="id" name="player_play">false</item>
+    <item type="id" name="player_next">false</item>
+</resources>

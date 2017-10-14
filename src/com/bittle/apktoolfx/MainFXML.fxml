@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+
+<TabPane maxHeight="-Infinity" fx:id="tabPane" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@/styles/material.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bittle.apktoolfx.MainController">
+  <tabs>
+    <Tab fx:id="decompileTab" text="DecompileTab">
+        <fx:include fx:id="decompileTabPage" source="decompile/DecompileTabPage.fxml"/>
+    </Tab>
+    <Tab fx:id="compileTab" text="CompileTab">
+        <fx:include fx:id="compileTabPage" source="compile/CompileTabPage.fxml"/>
+    </Tab>
+  </tabs>
+</TabPane>

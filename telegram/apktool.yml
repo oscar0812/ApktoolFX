@@ -1,0 +1,28 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: telegram.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '25'
+sharedLibrary: false
+unknownFiles:
+  build-data.properties: '8'
+  builddef.lst: '8'
+  isoparser-default.properties: '8'
+  version.txt: '8'
+  fabric/com.stripe.stripe-android.properties: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.1-3ec4f3-SNAPSHOT
+versionInfo:
+  versionCode: '11041'
+  versionName: 4.4.0
