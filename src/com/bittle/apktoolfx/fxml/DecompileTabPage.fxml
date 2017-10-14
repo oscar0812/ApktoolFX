@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bittle.apktoolfx.decompile.DecompileController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bittle.apktoolfx.controllers.DecompileController">
     <children>
         <TextField onDragDropped="#drag_dropped" onDragOver="#drag_over" fx:id="main_text_field" layoutX="99.0" layoutY="14.0" prefHeight="27.0" prefWidth="352.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="10.0">
             <tooltip>
