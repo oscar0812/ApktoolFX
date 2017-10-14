@@ -16,7 +16,7 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class DecompileController implements Initializable{
+public class DecompileController implements Initializable {
     @FXML
     TextField apk_text_field;
 
@@ -33,9 +33,12 @@ public class DecompileController implements Initializable{
     Text output_dir_text;
 
     // checkbox settings
-    @FXML CheckBox force_checkbox;
-    @FXML CheckBox no_res_checkbox;
-    @FXML CheckBox no_src_checkbox;
+    @FXML
+    CheckBox force_checkbox;
+    @FXML
+    CheckBox no_res_checkbox;
+    @FXML
+    CheckBox no_src_checkbox;
 
     // apk vars
     private String current_apk_path = "";
@@ -87,18 +90,18 @@ public class DecompileController implements Initializable{
             protected Void call() throws Exception {
                 // include any options
                 String params = "d ";
-                if(force_checkbox.isSelected())
-                    params+=" -f ";
-                if(no_res_checkbox.isSelected())
-                    params+=" -r ";
-                if(no_src_checkbox.isSelected())
-                    params+=" -s ";
+                if (force_checkbox.isSelected())
+                    params += " -f ";
+                if (no_res_checkbox.isSelected())
+                    params += " -r ";
+                if (no_src_checkbox.isSelected())
+                    params += " -s ";
                 String[] p = params.split("\\s+");
                 p = append(p, current_apk_path);
 
                 // add the output directory to the end
-                if(!output_dir_text.getText().isEmpty() &&
-                        !output_dir_text.getText().toLowerCase().equals("no directory selected")){
+                if (!output_dir_text.getText().isEmpty() &&
+                        !output_dir_text.getText().toLowerCase().equals("no directory selected")) {
 
                     p = append(p, "-o");
                     p = append(p, output_dir_text.getText());
@@ -117,9 +120,9 @@ public class DecompileController implements Initializable{
     }
 
     // helper method
-    private String[] append(String[] arr, String a){
-        String[] temp = new String[arr.length+1];
-        for(int x = 0; x<arr.length; x++){
+    private String[] append(String[] arr, String a) {
+        String[] temp = new String[arr.length + 1];
+        for (int x = 0; x < arr.length; x++) {
             temp[x] = arr[x];
         }
         temp[arr.length] = a;
@@ -127,7 +130,7 @@ public class DecompileController implements Initializable{
         return temp;
     }
 
-    public void change_output_dir_click(){
+    public void change_output_dir_click() {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle("Warning");
         alert.setContentText("All chosen folder contents will be erased!");
