@@ -3,23 +3,21 @@ package com.bittle.apktoolfx;
 import brut.androlib.MainLogger;
 import javafx.application.Platform;
 import javafx.scene.control.ScrollPane;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 
 public class LOGGER extends MainLogger {
 
-    private static MainLogger instance = null;
+    private static LOGGER instance = null;
+
+    public static LOGGER getInstance(){
+        if(instance == null)
+            instance = new LOGGER();
+        return instance;
+    }
 
     private static TextFlow log_text_area;
     private static ScrollPane log_scroll_pane;
-
-    public static MainLogger getInstance() {
-        if (instance == null) {
-            instance = new LOGGER();
-        }
-        return instance;
-    }
 
     public static void setGUIVars(TextFlow area, ScrollPane pane) {
         log_text_area = area;
@@ -28,6 +26,9 @@ public class LOGGER extends MainLogger {
 
     @Override
     public void ERROR(Object msg) {
+        if(msg.toString().contains("-f")){
+            msg = msg.toString().replace("-f", "force");
+        }
         if (!msg.toString().trim().isEmpty())
             appendToTextArea(msg + "\n", "error_text");
     }
