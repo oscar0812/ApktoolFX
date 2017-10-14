@@ -16,8 +16,7 @@
 <?import javafx.scene.text.TextFlow?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bittle.apktoolfx.compile.CompileController">
-   <children>
-      <TextField fx:id="compile_folder_text_field" layoutX="99.0" layoutY="14.0" onDragDropped="#folder_dropped" onDragOver="#folder_drag_over" prefHeight="27.0" prefWidth="352.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="10.0">
+      <TextField fx:id="main_text_field" layoutX="99.0" layoutY="14.0" onDragDropped="#drag_dropped" onDragOver="#drag_over" prefHeight="27.0" prefWidth="352.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="10.0">
          <tooltip>
             <Tooltip text="Drop decompiled folder here" />
          </tooltip>
@@ -28,7 +27,7 @@
                </items>
             </ContextMenu>
          </contextMenu></TextField>
-      <Button fx:id="compile_button" layoutX="503.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#compile_click" text="Compile" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Button fx:id="main_button" layoutX="503.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#main_button_click" text="Compile" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
       <Text layoutX="14.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log:" wrappingWidth="102.21875" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="10.0" />
       <Separator layoutX="6.0" layoutY="182.0" prefHeight="0.0" prefWidth="590.0" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
       <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Folder path:" wrappingWidth="102.2187352180481" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
@@ -55,5 +54,4 @@
             <Insets top="-10.0" />
          </padding>
       </ButtonBar>
-   </children>
 </AnchorPane>
