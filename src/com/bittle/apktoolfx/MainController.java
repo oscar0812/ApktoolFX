@@ -11,12 +11,17 @@ import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
 
-    @FXML private TabPane tabPane;
-    @FXML private Tab compileTab;
-    @FXML private CompileController compileController;
+    @FXML
+    private TabPane tabPane;
+    @FXML
+    private Tab compileTab;
+    @FXML
+    private CompileController compileController;
 
-    @FXML private Tab decompileTab;
-    @FXML private DecompileController decompileController;
+    @FXML
+    private Tab decompileTab;
+    @FXML
+    private DecompileController decompileController;
 
     @Override
     public void initialize(URL url, ResourceBundle bundle) {
