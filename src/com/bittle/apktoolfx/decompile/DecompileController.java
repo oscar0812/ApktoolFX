@@ -1,40 +1,18 @@
 package com.bittle.apktoolfx.decompile;
 
+import com.bittle.apktoolfx.Controller;
 import com.bittle.apktoolfx.LOGGER;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
-import javafx.scene.input.TransferMode;
-import javafx.scene.text.Text;
-import javafx.scene.text.TextFlow;
-import javafx.stage.DirectoryChooser;
 
 import java.io.File;
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class DecompileController implements Initializable {
-    @FXML
-    TextField apk_text_field;
-
-    @FXML
-    Button decompile_apk_button;
-
-    @FXML
-    TextFlow log_text_area;
-
-    @FXML
-    ScrollPane log_scroll_pane;
-
-    @FXML
-    Text output_dir_text;
+public class DecompileController extends Controller {
 
     // checkbox settings
-    @FXML
-    CheckBox force_checkbox;
     @FXML
     CheckBox no_res_checkbox;
     @FXML
@@ -43,21 +21,8 @@ public class DecompileController implements Initializable {
     // apk vars
     private String current_apk_path = "";
 
-    //@Override
-    public void initialize(URL url, ResourceBundle bundle) {
-        log_scroll_pane.setFitToWidth(true);
-    }
-
     @FXML
-    void apk_drag_over(DragEvent event) {
-        Dragboard board = event.getDragboard();
-        if (board.hasFiles()) {
-            event.acceptTransferModes(TransferMode.ANY);
-        }
-    }
-
-    @FXML
-    void apk_dropped(DragEvent event) {
+    public void drag_dropped(DragEvent event) {
         try {
             Dragboard board = event.getDragboard();
             File file = board.getFiles().get(0);
@@ -65,7 +30,7 @@ public class DecompileController implements Initializable {
             if (file.getName().endsWith(".apk")) {
                 // apk file dragged in
                 current_apk_path = file.getAbsolutePath();
-                apk_text_field.setText(file.getName());
+                main_text_field.setText(file.getName());
 
                 LOGGER.setGUIVars(log_text_area, log_scroll_pane);
                 LOGGER.getInstance().FINE("File dropped: " + file.getAbsolutePath());
@@ -76,11 +41,10 @@ public class DecompileController implements Initializable {
     }
 
     @FXML
-    void decompile_click() {
+    public void main_button_click() {
         LOGGER.setGUIVars(log_text_area, log_scroll_pane);
-        // d -f /Users/oscartorres/Downloads/telegram.apk -o /Users/oscartorres/Desktop/
 
-        if (apk_text_field.getText().trim().isEmpty()) {
+        if (main_text_field.getText().trim().isEmpty()) {
             LOGGER.getInstance().ERROR("APK text field cannot be empty");
             return;
         }
@@ -117,37 +81,5 @@ public class DecompileController implements Initializable {
         Thread thread = new Thread(task);
         thread.setDaemon(true);
         thread.start();
-    }
-
-    // helper method
-    private String[] append(String[] arr, String a) {
-        String[] temp = new String[arr.length + 1];
-        for (int x = 0; x < arr.length; x++) {
-            temp[x] = arr[x];
-        }
-        temp[arr.length] = a;
-
-        return temp;
-    }
-
-    public void change_output_dir_click() {
-        Alert alert = new Alert(Alert.AlertType.WARNING);
-        alert.setTitle("Warning");
-        alert.setContentText("All chosen folder contents will be erased!");
-
-        alert.showAndWait();
-        directoryChooser();
-    }
-
-    private void directoryChooser() {
-        DirectoryChooser directoryChooser = new DirectoryChooser();
-        File selectedDirectory =
-                directoryChooser.showDialog(null);
-
-        if (selectedDirectory == null) {
-            output_dir_text.setText("No Directory selected");
-        } else {
-            output_dir_text.setText(selectedDirectory.getAbsolutePath());
-        }
     }
 }
