@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="used generic id's in order to comply with the new controller fields">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/MainController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/bittle/apktoolfx/MainController.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/compile/CompileController$1.class" afterPath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/compile/CompileController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/compile/CompileController.class" afterPath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/compile/CompileController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/decompile/DecompileController$1.class" afterPath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/decompile/DecompileController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/decompile/DecompileController.class" afterPath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/decompile/DecompileController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/MainFXML.fxml" afterPath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/MainFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/compile/CompileTabPage.fxml" afterPath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/compile/CompileTabPage.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/decompile/DecompileTabPage.fxml" afterPath="$PROJECT_DIR$/out/production/Apktool_GUI/com/bittle/apktoolfx/decompile/DecompileTabPage.fxml" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="used generic id's in order to comply with the new controller fields" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -91,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bittle/apktoolfx/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="346">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LOGGER.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LOGGER.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bittle/apktoolfx/LOGGER.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -155,7 +144,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/bittle/apktoolfx/fxml/CompileTabPage.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
                 <marker date="1508015868000" expanded="true" signature="2588:3346" ph="..." />
               </folding>
@@ -858,7 +847,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/bittle/apktoolfx/fxml/CompileTabPage.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <marker date="1508015868000" expanded="true" signature="2588:3346" ph="..." />
           </folding>
@@ -877,14 +866,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bittle/apktoolfx/LOGGER.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="56" lean-forward="false" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bittle/apktoolfx/Main.java">
@@ -929,10 +910,18 @@
     <entry file="file://$PROJECT_DIR$/src/com/bittle/apktoolfx/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bittle/apktoolfx/LOGGER.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="56" lean-forward="false" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
