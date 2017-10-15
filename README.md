@@ -13,3 +13,7 @@ Images:
 <br>
 ![Alt text](/img/ss1.png?raw=true "Decompile")
 ![Alt text](/img/ss2.png?raw=true "Compile")
+<br>
+<br>
+
+Jar file can be found [here](/out/artifacts/Apktool_GUI_jar/Apktool_GUI.jar)
