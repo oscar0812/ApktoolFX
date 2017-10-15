@@ -10,6 +10,6 @@ Features:
 
 
 Images:
-![Alt text](/img/ss1.png?raw=true "Decompile" | width=48)
+![Alt text](/img/ss1.png?raw=true "Decompile")
 ![Alt text](/img/ss2.png?raw=true "Compile")
 ![Alt text](/img/ss3.png?raw=true "Decompile")
