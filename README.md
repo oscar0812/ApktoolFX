@@ -5,7 +5,7 @@ ApktoolFX is a GUI for [Apktool](https://github.com/iBotPeaches/Apktool) written
 
 Features:
   - Drag and drop
-  - Material design
+  - [Material design](https://bitbucket.org/agix-material-fx/materialfx-material-design-for-javafx)
   - Log (with color-coding)
 
 
