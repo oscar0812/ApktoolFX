@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Apktool_GUI.iml" filepath="$PROJECT_DIR$/Apktool_GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ApktoolFX.iml" filepath="$PROJECT_DIR$/ApktoolFX.iml" />
     </modules>
   </component>
 </project>

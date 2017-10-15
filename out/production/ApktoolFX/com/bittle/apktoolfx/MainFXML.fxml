@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@/styles/material.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+    <Tab text="Decompile">
+        <fx:include fx:id="decompileTabPage" source="fxml/DecompileTabPage.fxml" />
+    </Tab>
+    <Tab text="Compile">
+        <fx:include fx:id="compileTabPage" source="fxml/CompileTabPage.fxml" />
+    </Tab>
+</TabPane>
