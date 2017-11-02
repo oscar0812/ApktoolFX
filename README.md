@@ -11,9 +11,10 @@ Features:
 
 Images:
 <br>
-![Alt text](/img/ss1.png?raw=true "Decompile")
-![Alt text](/img/ss2.png?raw=true "Compile")
+<img src="/img/ss1.png" width="300">
 <br>
+<br>
+<img src="/img/ss2.png" width="300">
 <br>
 
 Jar file can be found [here](/out/artifacts/Apktool_GUI_jar/Apktool_GUI.jar)
